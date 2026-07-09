@@ -1029,7 +1029,39 @@ Transform:
   - {fileID: 6461402769220177418}
   - {fileID: 5718085168343731372}
   - {fileID: 917963823372923480}
+  - {fileID: 2653942251239628651}
   m_Father: {fileID: 239364060823270460}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2443324146547886362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2653942251239628651}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2653942251239628651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2443324146547886362}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.013, y: 0.084, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1913106658524140391}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2832012065742561687
 GameObject:
@@ -2322,6 +2354,7 @@ GameObject:
   - component: {fileID: 2785590831571603647}
   - component: {fileID: 669190877071642697}
   - component: {fileID: 5171492134341433373}
+  - component: {fileID: 7899146910650749832}
   m_Layer: 0
   m_Name: character
   m_TagString: Untagged
@@ -2385,6 +2418,29 @@ MonoBehaviour:
   headlessBodyMesh: {fileID: 4300000, guid: 3c36308e4fb9ba24dbf65cf3cfed60df, type: 2}
   hideJointSpheres: 1
   headWeightThreshold: 0.35
+--- !u!114 &7899146910650749832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7963574813488247733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf80663d63661944927bd786bde0f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSpellController
+  animator: {fileID: 669190877071642697}
+  fireballPrefab: {fileID: 3226506910322988314, guid: eccbc655050af0b4f81d8db39f84a58e, type: 3}
+  firePoint: {fileID: 2653942251239628651}
+  animationLockTime: 7.7
+  fireballLocalOffset: {x: -0.025, y: -0.01, z: 0.113}
+  fireballLocalEulerAngles: {x: 0, y: 0, z: 0}
+  fireballScale: 0.075
+  launchAtEndOfAnimation: 1
+  endLaunchFallbackTime: 7.85
+  debugLogs: 1
+  debugDrawLaunchDirection: 1
 --- !u!1 &8109574813840433894
 GameObject:
   m_ObjectHideFlags: 0
